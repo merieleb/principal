@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Matemáticos Divertidos</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .exercise {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #ff5733;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #00a8cc;
+        }
+        p {
+            color: #333;
+            margin: 10px 0;
+        }
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #00a8cc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #007f99;
+        }
+        #resultado {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejercicios Matemáticos Divertidos</h1>
+        
+        <div class="exercise">
+            <h2>Ejercicio 1: Suma</h2>
+            <p>Resuelve la siguiente suma:</p>
+            <p>12 + 8 = <input type="text" id="suma_respuesta_1"></p>
+            <button onclick="verificarSuma(1)">Verificar</button>
+            <p id="suma_resultado_1" class="resultado"></p>
+        </div>
+
+        <div class="exercise">
+            <h2>Ejercicio 2: Resta</h2>
+            <p>Resuelve la siguiente resta:</p>
+            <p>25 - 9 = <input type="text" id="resta_respuesta_2"></p>
+            <button onclick="verificarResta(2)">Verificar</button>
+            <p id="resta_resultado_2" class="resultado"></p>
+        </div>
+
+        <div class="exercise">
+            <h2>Ejercicio 3: Multiplicación</h2>
+            <p>Resuelve el siguiente producto:</p>
+            <p>7 * 4 = <input type="text" id="multiplicacion_respuesta_3"></p>
+            <button onclick="verificarMultiplicacion(3)">Verificar</button>
+            <p id="multiplicacion_resultado_3" class="resultado"></p>
+        </div>
+    </div>
+
+    <script>
+        function verificarSuma(ejercicio) {
+            const respuesta = document.getElementById(`suma_respuesta_${ejercicio}`).value;
+            const resultado = parseInt(respuesta);
+            const mensajeResultado = document.getElementById(`suma_resultado_${ejercicio}`);
+            if (resultado === 20) {
+                mensajeResultado.textContent = "¡Correcto! 🎉";
+                mensajeResultado.style.color = "#00cc00";
+            } else {
+                mensajeResultado.textContent = "Respuesta incorrecta. Inténtalo de nuevo. 😔";
+                mensajeResultado.style.color = "#cc0000";
+            }
+        }
+
+        function verificarResta(ejercicio) {
+            const respuesta = document.getElementById(`resta_respuesta_${ejercicio}`).value;
+            const resultado = parseInt(respuesta);
+            const mensajeResultado = document.getElementById(`resta_resultado_${ejercicio}`);
+            if (resultado === 16) {
+                mensajeResultado.textContent = "¡Correcto! 🎉";
+                mensajeResultado.style.color = "#00cc00";
+            } else {
+                mensajeResultado.textContent = "Respuesta incorrecta. Inténtalo de nuevo. 😔";
+                mensajeResultado.style.color = "#cc0000";
+            }
+        }
+
+        function verificarMultiplicacion(ejercicio) {
+            const respuesta = document.getElementById(`multiplicacion_respuesta_${ejercicio}`).value;
+            const resultado = parseInt(respuesta);
+            const mensajeResultado = document.getElementById(`multiplicacion_resultado_${ejercicio}`);
+            if (resultado === 28) {
+                mensajeResultado.textContent = "¡Correcto! 🎉";
+                mensajeResultado.style.color = "#00cc00";
+            } else {
+                mensajeResultado.textContent = "Respuesta incorrecta. Inténtalo de nuevo. 😔";
+                mensajeResultado.style.color = "#cc0000";
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlace a Página Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .bottom-links {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bottom-link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .bottom-link:hover {
+            color: #00a8cc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tu contenido HTML aquí -->
+
+    <div class="bottom-links">
+        <a class="bottom-link" href="index.html">CV</a>
+        <a class="bottom-link" href="libre.html">TOP MUSIC</a>
+    </div>
+</body>
+</html>
